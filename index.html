@@ -1,0 +1,45 @@
+<html lang="en">
+    <head>
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class='half'>
+                <div class="text-ctn">
+                    <h3>HOME</h3>
+                </div>
+                <div class='number-board'>
+                    <h3 class='h4' id='home-score'>0</h3>
+                </div>
+                <div class='buttons'>
+                    <button id='1home' onclick='add1home()'>+1</button>
+                    <button id='2home' onclick='add2home()'>+2</button>
+                    <button id='3home' onclick='add3home()'>+3</button>
+                </div>
+            </div>
+            <div class='half'>
+                <div class="text-ctn">
+                    <h3>GUEST</h3>
+                </div>
+                <div class='number-board'>
+                    <h3 class='h4' id='guest-score'>0</h3>
+                </div>
+                <div class='buttons'>
+                    <button id='1guest' onclick='add1guest()'>+1</button>
+                    <button id='2guest' onclick='add2guest()'>+2</button>
+                    <button id='3guest' onclick='add3guest()'>+3</button>
+                </div>
+            </div>
+        </div>
+        <button id='new-game' onclick= 'newGame()'>NEW GAME</button>
+               
+
+        <script src="index.js"></script>
+        <footer>
+	        <p>Made by Allahtosin. © 2022 </p>
+        </footer>
+
+    </body>
+</html>
