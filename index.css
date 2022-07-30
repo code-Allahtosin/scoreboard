@@ -7,12 +7,17 @@ body {
     color: #EEEEEE;
     text-align: center;
     cursor:not-allowed;
+    display: grid;
+    grid-template-rows: 1fr 100px ;
 }
-
+#wrapper{
+    grid-row: 1;
+    padding: 0px 20px;
+}
 .container {
     cursor: default;
     width: 575px;
-    margin: 2px auto;
+    margin: 50px auto 10px;
     display: flex;
     justify-content: space-around;
     background: #1B244A;
@@ -91,8 +96,11 @@ button{
 }
 
 footer{
+    grid-row:2;
     /* color: #1B1B1E; */
     margin: 50px 10px 20px;
     color: #1B244A;
     text-align: end;
+    justify-content: end;
+
 }
