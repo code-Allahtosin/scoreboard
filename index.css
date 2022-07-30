@@ -3,12 +3,19 @@
     font-family: CursedTimerULiL;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
     color: #EEEEEE;
     text-align: center;
     cursor:not-allowed;
     display: grid;
     grid-template-rows: 1fr 100px ;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 }
 #wrapper{
     grid-row: 1;
